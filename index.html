@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 
 <head>
     <title>元素周期表 - Periodic Table</title>
@@ -83,7 +83,6 @@
 </head>
 
 <body>
-    <div id="info" style="font-family: '微软雅黑'">沪ICP备19004827号-3</div>
     <div id="container"></div>
     <div id="menu">
         <button id="table">表格</button>
@@ -93,6 +92,9 @@
     </div>
 
     <script type="module">
+        window.onload = function(){
+            history.replaceState({}, "元素周期表 - Periodic Table", "https://t.oier.fun/");
+        }
 
         import * as THREE from 'https://threejs.org/build/three.module.js';
 
